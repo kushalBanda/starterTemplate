@@ -205,3 +205,20 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Chat
+chat/*
+
+# AI generated files
+.cursor/*
+.claude/*
+
+# Markdown files
+CLAUDE.md
+AGENTS.md
+QWEN.md
+GEMINI.md
+
+# PRD files
+*.adoc
