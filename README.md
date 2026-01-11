@@ -10,7 +10,7 @@ Built with **Modern Python** principles, it emphasizes type safety, asynchronous
 
 ## ✨ Key Features
 
-* ** Robust Configuration Management: ** Centralized, type-safe environment configuration using `pydantic-settings` and `.env` files.
+* **Robust Configuration Management**: Centralized, type-safe environment configuration using `pydantic-settings` and `.env` files.
 * **Async Database Layer:** Pre-configured SQLAlchemy 2.0+ setup with asynchronous session management and connection pooling.
 * **AI Tooling Interface:** Structured directory for defining and registering AI tools (compatible with agents like Claude or OpenAI Assistants).
 * **Telemetry & Logging:** Integrated structured logging via `rich` for beautiful console output and easy debugging.
