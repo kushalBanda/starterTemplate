@@ -1,4 +1,4 @@
-# AI Agent Starter Template
+# Agent BluePrint
 
 > **Note:** This is a high-performance, asynchronous Python template designed for building scalable AI agents and services. It comes pre-configured with industry-standard patterns for configuration, database management, and AI model integration.
 
