@@ -19,21 +19,21 @@ To guide an AI assistant in creating a detailed, step-by-step task list in Markd
 
 ## Process
 
-1. **Receive PRD Reference:** The user points the AI to a specific PRD file
-2. **Analyze PRD:** The AI reads and analyzes the functional requirements, user stories, and other sections of the specified PRD.
-3. **Phase 1: Generate Parent Tasks:** Based on the PRD analysis, create the file and generate the main, high-level tasks required to implement the feature. Use your judgement on how many high-level tasks to use. It's likely to be about 5. Present these tasks to the user in the specified format (without sub-tasks yet). Inform the user: "I have generated the high-level tasks based on the PRD. Ready to generate the sub-tasks? Respond with 'Go' to proceed."
-4. **Wait for Confirmation:** Pause and wait for the user to respond with "Go".
-5. **Phase 2: Generate Sub-Tasks & Structure:** Once the user confirms:
+1.  **Receive PRD Reference:** The user points the AI to a specific PRD file
+2.  **Analyze PRD:** The AI reads and analyzes the functional requirements, user stories, and other sections of the specified PRD.
+3.  **Phase 1: Generate Parent Tasks:** Based on the PRD analysis, create the file and generate the main, high-level tasks required to implement the feature. Use your judgement on how many high-level tasks to use. It's likely to be about 5. Present these tasks to the user in the specified format (without sub-tasks yet). Inform the user: "I have generated the high-level tasks based on the PRD. Ready to generate the sub-tasks? Respond with 'Go' to proceed."
+4.  **Wait for Confirmation:** Pause and wait for the user to respond with "Go".
+5.  **Phase 2: Generate Sub-Tasks & Structure:** Once the user confirms:
    - Break down each parent task into smaller, actionable sub-tasks with complexity sizing (S/M/L/XL)
    - Analyze method layers (controller → service → repository) for technical tasks
    - Create granular sub-tasks for each implementation layer
    - Identify cross-cutting concerns (validation, error handling, logging)
    - Organize tasks into progress tracking sections
    - Add status indicators to relevant files
-6. **Identify Relevant Files:** Based on the tasks and PRD, identify potential files that will need to be created or modified. List these under the `Relevant Files` section with status indicators, including corresponding test files if applicable.
-7. **Create Implementation Plan:** Generate a detailed implementation plan based on PRD analysis.
-8. **Generate Final Output:** Combine all sections into the final Markdown structure with progress tracking capabilities.
-9. **Save Task List:** Save the generated document in the `/tasks/<feature-folder>/` directory with the filename `tasks-[prd-file-name].md`.
+6.  **Identify Relevant Files:** Based on the tasks and PRD, identify potential files that will need to be created or modified. List these under the `Relevant Files` section with status indicators, including corresponding test files if applicable.
+7.  **Create Implementation Plan:** Generate a detailed implementation plan based on PRD analysis.
+8.  **Generate Final Output:** Combine all sections into the final Markdown structure with progress tracking capabilities.
+9.  **Save Task List:** Save the generated document in the `/tasks/<feature-folder>/` directory with the filename `tasks-[prd-file-name].md`.
 
 ## Output Format
 
@@ -57,7 +57,7 @@ List of files to be created or modified for the tasks. Use status indicators:
 - `path/to/potential/file1.ts` - Brief description of purpose (not started)
 - `path/to/file1.test.ts` - Unit tests for `file1.ts` (not started)
 - `path/to/another/file.tsx` - Brief description ⏳ (in-progress)
-- `path/to/another/file.test.tsx` - Unit tests for `another/file.tsx` (completed)
+- `path/to/another/file.test.tsx` - Unit tests for `another/file.tsx` ✅ (completed)
 - `lib/utils/helpers.ts` - Utility functions needed
 - `lib/utils/helpers.test.ts` - Unit tests for `helpers.ts`
 
@@ -65,7 +65,7 @@ List of files to be created or modified for the tasks. Use status indicators:
 
 - Unit tests should typically be placed alongside the code files they are testing
 - Use `npx jest [optional/path/to/test/file]` to run tests
-- Status indicators: (completed), ⏳ (in-progress), (no indicator for not started)
+- Status indicators: ✅ (completed), ⏳ (in-progress), (no indicator for not started)
 
 ## 🗺️ Implementation Plan
 
@@ -74,7 +74,7 @@ Detailed description of how the feature will be implemented based on PRD analysi
 - Data flow and integration points
 - Key technical considerations and constraints
 
-## Completed Tasks
+## ✅ Completed Tasks
 (Initially empty)
 
 ## 🚧 In Progress Tasks
